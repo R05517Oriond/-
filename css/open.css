@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* css animation (prefixes are cut) */
+@font-face { 
+  /* ① ここにfont-familyで指定したい名前を書く*/
+	font-family: "._ikaho-Hiragana.otf";
+  /* フォントが置かれているパスを書く */ 
+  src: url("/font/mksd_ikaho/Ikaho-Alphabet.otf") format("truetype") 
+}
+
+ /* ①で作成した名前を使うと、普通にfont-familyを使う感じで、アップロードしたフォントを利用できる */ 
+.appear {
+	transform-origin:center top; 
+	font-family: "._ikaho-Hiragana.otf";
+}
+span.appear {display:inline-block;}
+.d1 {animation-delay:1s;}
+.d2 {animation-delay:2s;}
+.d3 {animation-delay:3s;}
+.d4 {animation-delay:4s;}
+.d6 {animation-delay:6s;}
+.d8 {animation-delay:7s;}
+.d10 {animation: delay 8s;}
+.d12 {animation-delay:30s;}
+@keyframes show {
+	0% {
+		transform:translate(0,2em);
+		opacity:0;
+		text-shadow:0 0 0 rgb(110, 30, 248);
+	}
+	50% {
+		text-shadow:0 0 0.5em rgb(255, 0, 242);
+	}
+	100% {
+		transform:translate(0,0);
+		opacity:1;
+		text-shadow:none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	p{
+			background-color: black;
+			 color:green;
+	 }
+}
+
+@media screen and (max-width: 480px) {
+	p{
+			background-color: black;
+			 color:red;
+	 }
+}
+

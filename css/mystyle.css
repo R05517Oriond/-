@@ -1,0 +1,564 @@
+@charset "UTF-8";
+
+@font-face { 
+  /* ① ここにfont-familyで指定したい名前を書く*/
+  font-family: "._ikaho-Alphabet.otf"; 
+
+  /* フォントが置かれているパスを書く */ 
+  src: url("/font/mksd_ikaho/Ikaho-Alphabet.otf") format("truetype") }
+
+ /* ①で作成した名前を使うと、普通にfont-familyを使う感じで、アップロードしたフォントを利用できる */ 
+header{ 
+  font-family: "._ikaho-Alphabet.otf"; 
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.pan .inpan{
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 80%;
+}
+
+.inpan{
+  padding-left: 0;
+}
+
+.header {
+	width: 100%;
+	padding: 5px 4% 10px;
+	background-color: rgb(0, 0, 0)	;
+	position: sticky;
+	top: 0;
+	display: flex;
+	align-items: center;
+  opacity: 0.8;
+}
+
+.container{
+	margin: 0;
+	padding: 0;
+	font-size: 40px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.nav{
+	margin: 0 0 0 auto;
+}
+
+.menu{
+	list-style: none;
+	margin: 0;
+	display: flex;
+}
+
+.li{
+	margin: 0 0 0 20px;
+	font-size: 20px;
+}
+
+
+.footer{
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  color: #ffffff;
+  box-sizing: border-box;
+  font-size: x-small;
+}
+
+.ika{
+  width: 100%;
+  display: flex;
+  background-color: #00000097;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 1px 0;
+  bottom: 0; /*下に固定*/
+  list-style: none;
+  position: absolute;
+
+}
+
+.ikabtn{
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  color: #FFF;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 980%;
+  margin-right: 75%;
+  padding: 10px 20px;
+  border: none;
+  padding: 2px 2px;
+}
+
+.ikabtn2{
+  background-color: #05000600;
+  width: 100%;
+  text-align: center;
+  padding: 2px 2px;
+  border: none;
+  margin-left: 1070%;
+}
+
+
+
+
+/* メニューバーの色*/
+.bg-gradient1 span,
+.bg-gradient1:before {
+  background: #8cc1f0;
+  background: linear-gradient(to right, #cf52fd 0%, #00e2fa 80%, #00e2fa 100%);
+}
+
+.bg-gradient2 span,
+.bg-gradient2:before {
+  background: #44ea76;
+  background: linear-gradient(to right, #44ea76 0%, #39fad7 80%, #39fad7 100%);
+}
+
+.bg-gradient3 span,
+.bg-gradient3:before {
+  background: #fa6c9f;
+  background: linear-gradient(to right, #fa6c9f 0%, #ffe140 80%, #ffe140 100%);
+}
+
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+a {
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+
+/* カラフルボタン */
+.fancy-button {
+  display: inline-block;
+  margin: 30px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+.fancy-button:before {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  position: absolute;
+  bottom: -5px;
+  left: 30px;
+  right: 30px;
+  z-index: -1;
+  border-radius: 30em;
+  filter: blur(20px) brightness(0.95);
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-out;
+}
+.fancy-button i {
+  margin-top: -1px;
+  margin-right: 20px;
+  font-size: 1.265em;
+  vertical-align: middle;
+}
+.fancy-button span {
+  display: inline-block;
+  padding: 18px 60px;
+  border-radius: 50em;
+  position: relative;
+  z-index: 2;
+  will-change: transform, filter;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-out;
+}
+.fancy-button:focus, .fancy-button:active {
+  color: #ffffff;
+}
+.fancy-button:hover {
+  color: #ffffff;
+}
+.fancy-button:hover span {
+  filter: brightness(1.05) contrast(1.05);
+  transform: scale(0.95);
+}
+.fancy-button:hover:before {
+  bottom: 0;
+  filter: blur(10px) brightness(0.95);
+}
+.fancy-button.pop-onhover:before {
+  opacity: 0;
+  bottom: 10px;
+}
+.fancy-button.pop-onhover:hover:before {
+  bottom: -7px;
+  opacity: 1;
+  filter: blur(20px);
+}
+.fancy-button.pop-onhover:hover span {
+  transform: scale(1.04);
+}
+.fancy-button.pop-onhover:hover:active span {
+  filter: brightness(1) contrast(1);
+  transform: scale(1);
+  transition: all 0.15s ease-out;
+}
+.fancy-button.pop-onhover:hover:active:before {
+  bottom: 0;
+  filter: blur(10px) brightness(0.95);
+  transition: all 0.2s ease-out;
+}
+
+/*メニューバーここまで*/
+
+/* メイン */
+body{
+  font-family: "Squada One", sans-serif;
+  background: #000e12;
+  color: #daf6ff;
+  margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman', Times, serif;
+  background-image: url(../images/haikei.jpg);
+}
+
+.bluelight {
+  display: table;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.bluelight a {
+  display: table-cell;
+  font-size: 3em;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  transition: background 1s, border-width 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), text-shadow 0.5s;
+  color: #daf6ff;
+  text-shadow: 0 0 20px #a80ae6, 0 0 20px rgba(10, 175, 230, 0);
+  box-shadow: 0 0 0 rgb(10, 175, 230), inset 0 0 0 rgba(10, 175, 230, 0);
+  background-image: radial-gradient(center, ellipse cover, rgba(10, 175, 230, 0) 0%, rgba(10, 175, 230, 0) 90%);
+  border: 0 dotted rgba(10, 175, 230, 0);
+}
+.bluelight a:hover {
+  color: #fff;
+  text-shadow: 0 0 50px #0aafe6, 0 0 50px #0aafe6;
+  background-image: radial-gradient(center, ellipse cover, rgba(10, 175, 230, 0.3) 0%, rgba(10, 175, 230, 0) 60%);
+}
+.bluelight:before, .bluelight:after, .bluelight a:before, .bluelight a:after {
+  transition: 0.2s ease-in-out;
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  border: 60px dashed transparent;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.bluelight:before {
+  animation: rotate 20s linear 0s infinite;
+  width: 180%;
+  height: 180%;
+  border: 3px dotted rgb(255, 0, 170);
+  z-index: -1;
+}
+.bluelight:after {
+  animation: rotate 10s linear 0s infinite reverse;
+  border: 80px dashed rgba(0, 0, 0, 0);
+  width: 160%;
+  height: 160%;
+  z-index: -2;
+}
+.bluelight a:before {
+  animation: rotate 5s ease-in-out 0s infinite alternate;
+  width: 120%;
+  height: 120%;
+  border: 50px dashed rgba(10, 175, 230, 0);
+}
+.bluelight a:after {
+  animation: rotate 5s linear 0s infinite;
+  border: 18px dashed rgba(10, 175, 230, 0);
+  width: 120%;
+  height: 120%;
+}
+.bluelight:hover:before {
+  border-color: rgba(217, 2, 255, 0.271);
+
+}
+.bluelight:hover:after {
+  border-color: rgba(217, 2, 255, 0.271);
+}
+.bluelight:hover a:before {
+  border-color: rgba(217, 2, 255, 0.271);
+}
+.bluelight:hover a:after {
+  border-color: rgba(217, 2, 255, 0.271);
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+p.caption {
+  background-position: left 100% center;
+  transform: translate(-20px, 0);
+  -webkit-animation: toRight var(--duration, 2.4s) var(--ease) var(--delay, 0.6s) forwards;
+          animation: toRight var(--duration, 2.4s) var(--ease) var(--delay, 0.6s) forwards;
+  font-size: x-large;
+  width: 100%;
+  bottom: 0;
+  letter-spacing: 0.2em;
+  opacity: 0;
+  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+}
+
+@keyframes toRight {
+  from{ 
+    transform: translate(-100%);
+    opacity: 0;
+  }
+
+  to{
+    transform: translate(0%);
+    opacity: 1;
+  }
+}
+/*　メイン */
+
+/* profile */
+
+.profilemain{
+  background-image:url(/images/黒.png);
+}
+
+.profileli{
+  color: #44ea76;
+  text-align: center;
+  margin: auto;
+  list-style: none;
+}
+
+.takeda{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+}
+.otobe{
+  list-style: none;
+  text-align: left;
+  margin-left:100px;
+  font-size: xx-large;
+}
+
+.sumika{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+}
+
+.birthday{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+}
+
+/* profile */
+
+/* favorite01 */
+@font-face {
+  font-family:"._ikaho-Katakana.otf";
+  src: url("/font/mksd_ikaho/Ikaho-Katakana.otf");
+}
+.favorite01{
+  background-image: url(/images/黒.png);
+}
+
+.flex{
+  display: flex;
+}
+
+.flex .supuraimg {
+  width: 1050px; /*画像サイズ指定*/
+  margin: 0;
+  margin-left: 40px;
+  padding: 0;
+  overflow: hidden;
+}
+.flex .favorite01supura {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.flex .supura{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.flex .supuratext {
+  margin: 10px 0 0;
+  padding: 0;
+  color:rgb(255, 255, 255)
+}
+
+.favorite01title{
+  text-align: center;
+}
+
+.supura{
+  text-align: center;
+}
+
+.pokemontext{
+  text-align: center;
+}
+
+.favoritebtn{
+  display: block;
+  justify-content: center;
+  padding: 10px;
+  background: #f2f2f2;
+  border: 1px solid #999;
+  color: #333;
+  width: 500px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+/*favorite01 終わり */
+
+/*favorite02*/
+.favorite02{
+  background-image: url(/images/black.png);
+}
+
+.favorite02title {
+  text-align: center;
+}
+
+.vtuber{
+  text-align: center;
+}
+
+.vtubertext{
+  margin-left: 70px;
+}
+
+/* favorite03 */
+.favorite03{
+  background-image: url(/images/black.png);
+}
+/* iit */
+
+.iit{
+  background-image: url(/images/black.png);
+}
+
+.buttons{
+  margin: 20px 200px;
+  text-align: center;
+}
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-1 {
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.btn-hover.color-2 {
+  background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+.btn-hover.color-3 {
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.btn-hover.color-4 {
+  background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+  box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+.btn-hover.color-5 {
+  background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+.btn-hover.color-6 {
+  background-image: linear-gradient(to right, #009245, #FCEE21, #00A8C5, #D9E021);
+  box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+}
+.btn-hover.color-7 {
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+.btn-hover.color-8 {
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.btn-hover.color-9 {
+  background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+.btn-hover.color-10 {
+  background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}

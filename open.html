@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orio top</title>
+    <link rel="stylesheet" href="./css/open.css">
+    <style>
+        body {
+            background: #000000 none no-repeat;
+        }
+
+        footer {
+            background: #222 none no-repeat;
+            margin: 1em 0;
+            text-align: center;
+            padding: 1em;
+        }
+
+        h1 {
+            line-height: 1.2;
+            font-size: 3em;
+        }
+
+        pre {
+            color: rgb(137, 237, 14);
+        }
+
+        #top {
+            margin: 15em auto;
+            width: 80em;
+            padding: 10em;
+            background: #000000;
+            color: rgb(77, 128, 240);
+            box-shadow: 0 0 1em rgb(185, 0, 195); 
+        }
+
+        .appear {
+            -webkit-transform-origin: center top;
+            -webkit-animation: show 1s both;
+            -moz-transform-origin: center top;
+            -moz-animation: show 1s both;
+            transform-origin: center top;
+            animation: show 1s both;
+        }
+
+        span.appear {
+            display: inline-block;
+        }
+
+        .d1 {
+            -webkit-animation-delay: 1s;
+            -moz-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+
+        .d2 {
+            -webkit-animation-delay: 2s;
+            -moz-animation-delay: 2s;
+            animation-delay: 2s;
+        }
+
+        .d3 {
+            -webkit-animation-delay: 3s;
+            -moz-animation-delay: 3s;
+            animation-delay: 3s;
+        }
+
+        .d4 {
+            -webkit-animation-delay: 4s;
+            -moz-animation-delay: 4s;
+            animation-delay: 4s;
+        }
+
+        .d6 {
+            -webkit-animation-delay: 6s;
+            -moz-animation-delay: 6s;
+            animation-delay: 6s;
+        }
+
+        .d8 {
+            -webkit-animation-delay: 8s;
+            -moz-animation-delay: 8s;
+            animation-delay: 8s;
+        }
+
+        .d10 {
+            -webkit-animation-delay: 10s;
+            -moz-animation-delay: 10s;
+            animation-delay: 10s;
+        }
+
+        .d12 {
+            -webkit-animation-delay: 40s;
+            -moz-animation-delay: 40s;
+            animation-delay: 40s;
+        }
+
+        @-webkit-keyframes show {
+            0% {
+                -webkit-transform: translate(0, 1em);
+                opacity: 0;
+                text-shadow: 0 0 0 #0015f9;
+            }
+
+            50% {
+                text-shadow: 0 0 .5em #0015f9;
+            }
+
+            100% {
+                -webkit-transform: translate(0, 0);
+                opacity: 1;
+                text-shadow: none;
+            }
+        }
+
+        @-moz-keyframes show {
+            0% {
+                -moz-transform: translate(0, 1em);
+                opacity: 0;
+                text-shadow: 0 0 0 #0015f9;
+            }
+
+            50% {
+                text-shadow: 0 0 .5em #0015f9;
+            }
+
+            100% {
+                -moz-transform: translate(0, 0);
+                opacity: 1;
+                text-shadow: none;
+            }
+        }
+
+        @keyframes show {
+            0% {
+                transform: translate(0, 1em);
+                opacity: 0;
+                text-shadow: 0 0 0 #0015f9;
+            }
+
+            50% {
+                text-shadow: 0 0 .5em #0015f9;
+            }
+
+            100% {
+                transform: translate(0, 0);
+                opacity: 1;
+                text-shadow: none;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-38185138-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="top" class="appear">
+        <header>
+            <h1>ホームページの
+                <span class="appear d1">URLは</span>
+                <span class="appear d2">どこに</span>
+                <span class="appear d3">あるか探してみてね!</span>
+            </h1>
+        </header>
+        <div class="appear d4">
+            <p>細かいところまで 
+                <span class="appear d6">目を通してみてね</span>
+                <span class="appear d8"><a href="./index.html" style="color:  rgb(0, 0, 0);">!</a></span>
+                <span class="appear d10">ヒントはどこかの語尾の近くでカーソルが変わるよ</span>
+            </p>
+            <pre class="appear d12">答えは「通してみてね」の後ろの「ね」をクリックしてみるんだ！</pre>
+        </div>
+    </div>
+</body>
+
+</html>
